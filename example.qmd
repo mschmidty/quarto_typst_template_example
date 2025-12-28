@@ -20,8 +20,13 @@ Typst supports *italics*, **bold text**, and ***bold italics***. You can also us
 
 Here is a block quote:
 
+
 > "The best way to predict the future is to create it."  
 > --- Peter Drucker
+
+:::{.callout-warning}
+Test text of a note.
+:::
 
 ## Mathematics
 
@@ -78,7 +83,9 @@ We can also use `ggplot2` if installed, but base R is safer for a generic templa
 ```{r}
 #| label: fig-hist
 #| fig-cap: "Histogram of 1000 random normal values."
-#| echo: true
+#| fig-width: 10
+#| fig-height: 6
+#| echo: false
 
 data <- rnorm(1000)
 hist(data, col = "skyblue", border = "white", main = "Normal Distribution")
