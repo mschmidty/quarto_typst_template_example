@@ -10,7 +10,7 @@
   set text(
     lang: "en",
     region: "US",
-    font: "Source Serif Pro",
+    font: "Inter",
     size: 11pt,
   )
   align(left)[
@@ -24,13 +24,21 @@
   }
   set heading(numbering: "1.1")
   show heading: it => {
-    set text(font: "Karla", weight: 900)
+    set text(
+      font: "Inter",
+      weight: 700,
+      fill: rgb("#005e2f"),
+    )
     it
   }
   // Level 1 (= Title)
   show heading.where(level: 1): it => {
-    set text(size: 18pt)
     set align(center)
+    set block(below: 1.5em)
+    set text(
+      size: 18pt,
+      fill: rgb("#666666"),
+    )
     it
   }
 
