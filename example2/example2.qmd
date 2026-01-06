@@ -1,6 +1,7 @@
 ---
 title: This is another typst test not made with AI
 date: 2025-12-27
+author: ["Mike Schmidt", "Sabina Kraushaar"]
 tags: []
 format: 
   typst:
